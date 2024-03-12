@@ -11,7 +11,7 @@
     {
         fixed (int* pData = data)
         {
-            using var image = Image.WrapMemory<Bgra32>(pData, width, height);
+            using var image = Image.WrapMemory<Bgra32>(pData, width, height);//hi
             image.SaveAsPng(filename);
         }
     }
