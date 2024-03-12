@@ -3,7 +3,7 @@
         using var image = Image.Load<Bgra32>(filename);
         int width = image.Width, height = image.Height;
         int[] result = new int[width * height];
-        image.CopyPixelDataTo(MemoryMarshal.Cast<int, Bgra32>(result));
+        image.CopyPixelDataTo(MemoryMarshal.Cast<int, Bgra32>(result));//yes
         return (result, width, height);
     }
 
